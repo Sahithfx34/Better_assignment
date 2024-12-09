@@ -1,10 +1,5 @@
 (a) How to Run the Project:
 To run the project, follow these steps:
-
-Setup Environment:
-
-Ensure you have Node.js and npm (Node Package Manager) installed on your system.
-If you don’t have Node.js, you can download and install it from the official Node.js website.
 Clone the Project:
 
 Clone the project repository from GitHub:
@@ -28,31 +23,16 @@ bash
 Copy code
 npm start
 This will start the application at http://localhost:3000.
-Access the Application:
-
-Open a web browser and navigate to http://localhost:3000.
-You should see the login page where you can enter email, password, and optionally check the 'Remember Me' checkbox to stay logged in.
-Testing:
-
-Use different test emails (with and without 'remember me' checked) to test the login functionality.
-You can check the local storage (localStorage.getItem('rememberMe')) to verify if the login state is correctly being stored.
 (b) Design Choices Made:
-Gradient Background:
-
-Chosen to create an attractive visual appearance.
-Enhances the aesthetics by using a smooth color transition from blue to pink.
-Helps in setting the mood of the application, which is a login page.
 Form Structure:
-
-Used a simple form layout with input fields for email, password, and a checkbox for 'Remember Me'.
-Each input field has placeholder text and validation error messages are displayed below them.
-The form layout is responsive, adjusts well on smaller screens (e.g., mobile devices).
-A Formik form library is used to manage form state and validation.
+  A Formik form library is used to manage form state and validation.
+  The password strength indicator is added to the signup form.
+  used custom hooks for performance optimization.
 Error Handling:
 
 Used the ErrorMessage component from Formik to display validation errors directly below the input fields.
 Integrated react-toastify for displaying success and error messages when logging in.
-Toast messages are visually distinct and provide feedback to the user.
+
 Local Storage:
 
 Implemented localStorage to persist user data (email and password) if the 'Remember Me' checkbox is checked.
