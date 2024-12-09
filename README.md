@@ -23,6 +23,7 @@ bash
 Copy code
 npm start
 This will start the application at http://localhost:3000.
+
 (b) Design Choices Made:
 Form Structure:
   A Formik form library is used to manage form state and validation.
@@ -41,6 +42,7 @@ Responsive Design:
 
 The form adjusts to various screen sizes using Tailwind CSS utilities (md:flex-row, max-w-lg, etc.).
 Ensures a consistent user experience across devices.
+
 (c) Assumptions or Limitations:
 Assumptions:
 
